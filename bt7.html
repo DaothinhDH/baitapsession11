@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // BÀI 1: Viết chương trình hiển thị bình phương của số nguyên từ 2 🡪 N 
+        // nhưng hiển thị các kết quả chia hết cho 2.. N nhập từ người dùng. 
+        // Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        // let n;
+        // do {
+        //     n = +prompt("Hãy nhập số nguyên N");
+        // } while (n < 2 || n > 100) {
+
+        // } for (i = 2; i <= n; i++) {
+        //     let binhphuong = i * i;
+        //     if (i % 2 == 0) {
+        //         console.log(binhphuong);
+        //     }
+
+        // }
+
+        //BÀI 2: Viết chương trình hiển thị bình phương của số chẵn từ 2 🡪 N. 
+        //N nhập từ người dùng. Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        do {
+            n = +prompt("Hãy nhập số nguyên N")
+
+        } while (n < 2 || n > 100);
+
+        for (i = 2; i <= n; i += 2) {
+            let sochan = Math.pow(i, 2);
+            console.log(`${i} ^ 2 = ${sochan}`);
+            
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
